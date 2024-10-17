@@ -1,21 +1,12 @@
 class Animal():
-    def __init__(self):
-        pass
-    
-    def comer():
+    def comer(self):
         print("Comiendo")
 
-class Mamífero():
-    def __init__(self):
-        pass
-    
+class Mamífero(Animal):
     def amamantar(self):
         print("Amamantando")
     
-class Ave():
-    def __init__(self):
-        pass
-    
+class Ave(Animal): 
     def volar(self):
         print("Volando")
 
@@ -26,4 +17,6 @@ class Murcielago(Mamífero, Ave):
 m1 = Murcielago()
 m1.amamantar()
 m1.volar()        
-      
+m1.comer()
+
+print(Murcielago.mro())
