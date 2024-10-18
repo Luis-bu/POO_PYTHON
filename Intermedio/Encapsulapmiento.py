@@ -9,4 +9,4 @@ class Miclase():
     
 objeto = Miclase()
 print(objeto.__atributo)
-print(objeto.__hablar)
+print(objeto.__hablar())
