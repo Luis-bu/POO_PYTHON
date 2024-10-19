@@ -4,17 +4,19 @@ class Persona():
         self.__nombre = nombre
         self.__edad = edad
     
+    #Getter (no recibe parametro y retorna el atributo privado)
     def get_nombre(self):
         return self.__nombre
     
+    #Getter (Recibe un atributo a ser cambiado y no retorna nada)
     def set_nombre(self, nombre):
         self.__nombre = nombre
     
     def get_edad(self):
-       return self.edad
+       return self.__edad
     
     def set_edad(self, edad):
-        self.edad = edad
+        self.__edad = edad
     
 persona1 = Persona("Luis", 17)
 
