@@ -13,7 +13,7 @@ class persona():
         return f'Persona: ("{self.nombre}", {self.edad})'
     
    #Sobrecarga de metodos
-   #Cuando sumamos 2 elementos
+   #definimos cuando sumamos 2 elementos
     def __add__(self, otro):
         nuevo_valor = self.edad + otro.edad
         return persona(self.nombre + " " + otro.nombre, nuevo_valor, random.choice([self.sexo, otro.sexo]))
