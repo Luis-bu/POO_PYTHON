@@ -1,13 +1,16 @@
 import random
+#Clase luchador 
 class luchador():
     def __init__(self, nombre, nivel_poder, habilidad):
         self.nombre = nombre
         self.nivel_poder = nivel_poder
         self.habilidad = habilidad
     
+    #Que aparece cuando se llama a un objeto en especifico
     def __str__(self):
         return f"Nombre: {self.nombre}\nNivel de poder: {self.nivel_poder}\nHabilidad: {self.habilidad}"
     
+    #Que ocurre cuando suma 2 objetos de la misma clase
     def __add__(self, other):
         nuevo_nombre= f"{self. nombre} {other.nombre}"
         nuevo_nivel_poder = self.nivel_poder + other.nivel_poder
@@ -19,4 +22,4 @@ p2 = luchador("Chun-li",8, "Hyakuretsukyaku")
 p3 = luchador("Ken Masters", 9, "Shoryuken")
 p4 = luchador("Guile", 7, "Sonic boom")
 
-print(p1+p3)
+print(p2+p4)

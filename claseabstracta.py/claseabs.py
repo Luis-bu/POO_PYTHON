@@ -37,11 +37,12 @@ class Trabajador(Persona):
         return f"{self.nombre} esta haciendo su trabajo de {self.actividad}"
     
         
-juan = Trabajador("Juan", 24, "No binario", "Programador", 100000)
+juan = Trabajador("Juan", 24, "No binario", "Programar", 100000)
 
 juan.presentarse()
 print(juan.hacer_actividad())
 
 pedro = Estudiante("Pedro", 18, "Masculino", "Cantar")
+
 pedro.presentarse()
 print(pedro.hacer_actividad())
